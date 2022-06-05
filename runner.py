@@ -2,19 +2,14 @@ from users.FreeUser import FreeUser
 from users.PremiumUser import PremiumUser
 
 
-# free_user = FreeUser("Bob",23,"7615555","sumthin@gmail.com")
-# print(free_user.adding_posts("post 1"))
-# print(free_user.adding_posts("post 2"))
-# print(free_user.adding_posts("post 3"))
-# print(free_user.adding_posts("post 4"))
-# print(free_user.posts)
+henry = FreeUser('Henry', 24, "717-666-8888", "email@email.com", 'free')
+henry.adding_posts('This is my first post')
+print(henry.posts)
 
-free_user = PremiumUser("Bob",23,"7615555","sumthin@gmail.com")
-print(free_user.adding_posts("post 1"))
-print(free_user.adding_posts("post 2"))
-print(free_user.adding_posts("post 3"))
-print(free_user.adding_posts("post 4"))
-print(free_user.posts)
+henry.adding_posts('This is my second post')
+print(henry.posts)
+
+henry.adding_posts('This is my third post')
 
 
 
